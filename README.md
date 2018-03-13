@@ -172,6 +172,8 @@ john:loveims
 You can use the following website to encode/decode: https://www.base64encode.org/
 For More information on [authorization](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.izua700/IZUHPINFO_RESTServices.htm) visit KC
 
+For information about setting up SSL with Jenkins see [Authentication](https://github.com/imsdev/share2018/wiki/Authentication) at the wiki.
+
   * Set Request body to your workflow parameters. 
 ```  
 {
