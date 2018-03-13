@@ -39,13 +39,10 @@ To run the workflow, you need the following authority:
   * Download [Git](https://git-scm.com/downloads) and install the latest version with the default settings.
   * Download [Jenkins](https://jenkins.io/download), selecting the LTS version on the left of the page, for the specific platform
     * For Windows, 
-        Unzip the archive folder and double-click the MSI installer and accept the defaults.
-   
-     * Mac ..
-     
-  * After the Jenkins installation, your web browser will open to http://localhost:8080
-  * Complete the installation process by Unlocking Jenkins with the Administrator password specified at the given location.
-  * On the next page click "Install suggested plugins" to complete the installation. (~3 minutes)
+        Unzip the archive folder and double-click the MSI installer and accept the defaults.     
+  * After the Jenkins installation, your web browser will open to `http://localhost:8080`
+  * Complete the installation process by **Unlocking Jenkins** with the Administrator password specified at the given location.
+  * On the next page click **Install suggested plugins** to complete the installation. (~3 minutes)
   * **Create First Admin User**
   * **Save and Finish**
   * **Start using Jenkins**
