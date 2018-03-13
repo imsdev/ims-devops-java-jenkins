@@ -1,5 +1,3 @@
-# Jenkins for continous integration and delivery
-
 ## Deliver a Java application to IMS using open source tools
 
 In this demo Jenkins is used with GitHub, Maven, Rest, and [z/OSMF](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.2.0/com.ibm.zos.v2r2.izua300/IZUHPINFO_OverviewMain.htm) to automate the software development process for an IMS application. 
