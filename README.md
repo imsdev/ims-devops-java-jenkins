@@ -149,6 +149,9 @@ Under "Post Steps"
     https://myzosmfdomain.com/zosmf/workflow/rest/1.0/workflows`
     ```
   * Change HTTP mode to POST
+  
+  ![post-request](./media/post5.png)
+
   * Set Headers Content-type to APPLICATION JSON
   * Add a Custom header and set Header to Authorization
   * Set Value to "Basic <base 64 encoding of your user id and password>" 
