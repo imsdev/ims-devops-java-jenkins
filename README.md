@@ -175,7 +175,7 @@ For information about setting up SSL with Jenkins see [Authentication](https://g
     "workflowName":"DeployJavaToIMS",
     "workflowDefinitionFile":"/u/paul/workflows/java/deployJavaToIMS.xml",
     "variableInputFile":"/u/paul/workflows/java/java_workflow_variables.properties",
-    "variables":[{"name":"DFS_classpath","value":"/u/paul/java/ims14/target/insurancenodb-1.jar"}],
+    "variables":[{"name":"DFS_classpath","value":"/u/paul/java/insurancenodb-1.jar"}],
     "system":"STLABE1",
     "owner":"paul",
     "assignToOwner":true,
@@ -238,6 +238,6 @@ In this step we are using the $workflowKey environment variable created in the p
 
 * Set **Response body in console?** to **Yes** in order to view the response returned from zosmf.
 
-To finish click the **Save** button.
+To finish click **Save**
 
 For more information visit the [Wiki](https://github.com/imsdev/share2018/wiki)
