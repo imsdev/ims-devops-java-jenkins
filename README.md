@@ -239,3 +239,5 @@ In this step we are using the $workflowKey environment variable created in the p
 * Set **Response body in console?** to **Yes** in order to view the response returned from zosmf.
 
 To finish click the **Save** button.
+
+For more information visit the [Wiki](https://github.com/imsdev/share2018/wiki)
