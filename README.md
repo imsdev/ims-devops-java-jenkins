@@ -137,6 +137,8 @@ When the build occurs later it will create the jar file with the name "insurance
 
 ### Set up an HTTP request POST method to create a z/OSMF workflow
 Under Post Steps:
+  * **Add post-build step -> Send files over FTP**.
+
   * **Add post-build step -> HTTP Request**. 
   
   ![post-build](./media/post.png)
