@@ -139,6 +139,13 @@ When the build occurs later it will create the jar file with the name "insurance
 Under Post Steps:
   * **Add post-build step -> Send files over FTP**.
 
+  ![post-build](./media/FTP.png)
+  
+  * Set FTP Server Name from drop down.
+  * Set Source files to "Sample/target/*.jar"
+  
+  ![post-build](./media/addFTPServer.png)
+  
   * **Add post-build step -> HTTP Request**. 
   
   ![post-build](./media/post.png)
