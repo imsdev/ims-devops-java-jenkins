@@ -6,6 +6,7 @@ What has tradionally been a series of manual hand-offs between development, buil
 
 The following scenario includes a developer commiting code to a Git staging repository. After the code has been committed Jenkins compiles and and builds the source and then FTP the jar file to z/OS. Upon completion of this step, Jenkins creates and starts a z/OSMF workflow to enable a Java Messaging Proccessing (JMP) on z/OS.
 
+
 For an introduction about DevOps with IMS, see [DevOps and IMS: Getting Started](https://developer.ibm.com/zsystems/2018/02/20/devops-ims-getting-started).
 
 For information about authentication and build triggers with Jenkins see the [Wiki](https://github.com/imsdev/share2018/wiki)
@@ -59,6 +60,7 @@ The following procedure installs plugins needed to automate the build and delive
     * HTTP Request Plugin - Used to send HTTP JSON requests to z/OS to creata a workflow.
     * Groovy - A scripting language to process the create workflow response and extract a workflow key needed to start the workflow.
     * Environment Injector Plugin - Used to save the workflow key to an environment variable.
+    * Publish Over FTP Plugin - For sending files on the server
 
 At the very bottom of the plugins page, select:
    * **Download now and install after restart**.
