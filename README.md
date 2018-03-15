@@ -71,7 +71,7 @@ If your browser appears to hang during this process, you can refresh the page if
 
 Java and the previously installed plugins must now be configured for use in Jenkins.  
 
-In the Jenkins GUI select: Manage Jenkins -> Global Tool Configuration:
+In the Jenkins GUI select: **Manage Jenkins** -> **Global Tool Configuration**:
 * Under JDK click **Add JDK**.
    * Set the name of the JDK (i.e JDK1.8).
    * Set the **JAVA_HOME** value to `path\of\your\JavaJDK` (i.e "C:\Program Files\Java8).
@@ -144,7 +144,7 @@ Under Post Steps:
   * Select **Advanced...**.
   * Set URL to the URL of your z/OSMF server and the workflows rest destination:
     ```
-    https://myzosmfdomain.com/zosmf/workflow/rest/1.0/workflows`
+    https://myzosmfdomain.com/zosmf/workflow/rest/1.0/workflows
     ```
   * Change HTTP mode to POST.
   
@@ -243,4 +243,4 @@ In this step we are using the $workflowKey environment variable created in the p
 
 To finish click **Save**
 
-For more information visit the [Wiki](https://github.com/imsdev/share2018/wiki)
+For more information and troubleshooting tips visit the [Wiki](https://github.com/imsdev/share2018/wiki)
