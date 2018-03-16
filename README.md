@@ -98,8 +98,11 @@ In the Jenkins GUI select: **Manage Jenkins** -> **Global Tool Configuration**:
 To finish click **Save**.
 
 In the Jenkins GUI select: **Manage Jenkins** -> **Configure System**:
-
-  ![maven](./media/addFTPServer.png)
+  * Click on Add, add server information as shown below:
+  
+  ![maven](./media/addftpServer.png)
+ 
+  * Click on **Test Configuration** to test if connection to the server is established.
   
   To finish click **Save**.
 
