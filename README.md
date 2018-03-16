@@ -142,9 +142,9 @@ Under Post Steps:
   ![post-build](./media/ftp.png)
   
   * Set FTP Server Name from drop down.
-  * Set Source files to "Sample/target/*.jar"
+  * Set Source files to "insurancenodb/target/*.jar"
   
-  ![post-build](./media/FTPPublish.png)
+  ![post-build](./media/ftpPublish.png)
   
   * **Add post-build step -> HTTP Request**. 
   
