@@ -97,6 +97,12 @@ In the Jenkins GUI select: **Manage Jenkins** -> **Global Tool Configuration**:
 
 To finish click **Save**.
 
+In the Jenkins GUI select: **Manage Jenkins** -> **Configure System**:
+
+  ![maven](./media/addFTPServer.png)
+  
+  To finish click **Save**.
+
 Next, create a Maven project which will build a Java jar from a GitHub repository and deploy it to IMS, starting a JMP.
 
 ## Create a Maven Project
