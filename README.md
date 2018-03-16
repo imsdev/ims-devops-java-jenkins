@@ -144,7 +144,7 @@ Under Post Steps:
   * Set FTP Server Name from drop down.
   * Set Source files to "Sample/target/*.jar"
   
-  ![post-build](./media/addFTPServer.png)
+  ![post-build](./media/FTPPublish.png)
   
   * **Add post-build step -> HTTP Request**. 
   
