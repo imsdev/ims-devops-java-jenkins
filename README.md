@@ -59,7 +59,7 @@ The following procedure installs plugins needed to automate the build and delive
     * HTTP Request Plugin - Used to send HTTP JSON requests to z/OS to creata a workflow.
     * Groovy - A scripting language to process the create workflow response and extract a workflow key needed to start the workflow.
     * Environment Injector Plugin - Used to save the workflow key to an environment variable.
-    * Publish Over FTP Plugin - For sending files on the server
+    * Publish Over FTP Plugin - For sending files on the server.
 
 At the very bottom of the plugins page, select:
    * **Download now and install after restart**.
@@ -139,7 +139,7 @@ When the build occurs later it will create the jar file with the name "insurance
 Under Post Steps:
   * **Add post-build step -> Send files over FTP**.
 
-  ![post-build](./media/FTP.png)
+  ![post-build](./media/ftp.png)
   
   * Set FTP Server Name from drop down.
   * Set Source files to "Sample/target/*.jar"
