@@ -10,6 +10,10 @@ For an introduction about DevOps with IMS, see [DevOps and IMS: Getting Started]
 
 For information about authentication and build triggers with Jenkins see the [Wiki](https://github.com/imsdev/share2018/wiki)
 
+### This sample demonstrates how to use Jenkins to:
+  * Build a Java project from GitHub and deploy the build to IMS
+  * Set up and start a Java JMP region using z/OSMF
+
 ## The steps below include:
 1. Installing Jenkins and Git
 1. Configuring Jenkins with Java and Git
@@ -17,10 +21,6 @@ For information about authentication and build triggers with Jenkins see the [Wi
 1. Creating and configuring a Maven Project
 1. Configure the Maven project with source on GitHub for automatng the build of the insurancenodb Java JMP application
 1. Configuring the HTTP request methods for creating and starting the z/OSMF workflow
-
-### This demonstration uses Jenkins to:
-  * Build a Java project from GitHub and deploy the build to IMS
-  * Set up and start a Java JMP region
 
 ## z/OS Prerequisites
   * An SMP/E installation of IMS is done and the IMS load libraries are available.
