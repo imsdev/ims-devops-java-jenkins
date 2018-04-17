@@ -193,7 +193,7 @@ For information about setting up SSL with Jenkins see [Authentication](https://g
   * Set Request body to your workflow parameters. 
 ```  
 {
-    "workflowName":"DeployJavaToIMS",
+    "workflowName":"DeployJavaToIMS_$BUILD_NUMBER",
     "workflowDefinitionFile":"/u/paul/workflows/java/deployJavaToIMS.xml",
     "variableInputFile":"/u/paul/workflows/java/java_workflow_variables.properties",
     "variables":[{"name":"DFS_classpath","value":"/u/paul/java/insurancenodb-1.jar"}],
