@@ -9,7 +9,15 @@ The following scenario includes a developer commiting code to a Git staging repo
 For an introduction about DevOps with IMS, see [DevOps and IMS: Getting Started](https://developer.ibm.com/zsystems/2018/02/20/devops-ims-getting-started).
 
 For information about authentication and build triggers with Jenkins see the [Wiki](https://github.com/imsdev/share2018/wiki)
- 
+
+## The steps below include:
+1. Installing Jenkins and Git
+1. Configuring Jenkins with Java and Git
+1. Installing and configuring plugins for Jenkins
+1. Creating and configuring a Maven Project
+1. Configure the Maven project with source on GitHub for automatng the build of the insurancenodb Java JMP application
+1. Configuring the HTTP request methods for creating and starting the z/OSMF workflow
+
 ### This demonstration uses Jenkins to:
   * Build a Java project from GitHub and deploy the build to IMS
   * Set up and start a Java JMP region
