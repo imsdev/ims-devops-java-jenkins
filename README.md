@@ -15,11 +15,11 @@ For information about authentication and build triggers with Jenkins see the [Wi
   * Set up and start a Java JMP region using z/OSMF
 
 ## The steps below include:
-1. Installing Jenkins and Git
-1. Configuring Jenkins with Java and Git
-1. Installing and configuring plugins for Jenkins
-1. Creating and configuring a Maven Project
-1. Configure the Maven project with source on GitHub for automatng the build of the insurancenodb Java JMP application
+1. Install Jenkins and Git
+1. Install custom plugins
+1. Configure Java and the installed plugins
+1. Create a Maven Project
+1. Configure the Maven project with source on GitHub for automatng the build of the [insurancenodb](https://github.com/imsdev/ims-java-jmp) Java JMP application
 1. Configuring the HTTP request methods for creating and starting the z/OSMF workflow
 
 ## z/OS Prerequisites
@@ -168,9 +168,9 @@ Under Post Steps:
   ![post-build](./media/post.png)
 
   * Select **Advanced...**.
-  * Set URL to the URL of your z/OSMF server and the workflows rest destination:
+  * Set **URL** to the URL of your z/OSMF server, replacing {myzosmfdomain.com} in the snippet below, with the domain of the z/OSMF server. 
     ```
-    https://myzosmfdomain.com/zosmf/workflow/rest/1.0/workflows
+    https://{myzosmfdomain.com}/zosmf/workflow/rest/1.0/workflows
     ```
   * Change HTTP mode to POST.
   
@@ -251,10 +251,10 @@ workflowKey=2429c266-e8c3-498d-8a4b-4d306a315d31
 In this step we are using the $workflowKey environment variable created in the prior step
 
 * Add post-build step -> **HTTP Request and expand Advanced**.
-* Set the **URL** to the z/OSMF URL required to start the workflow.
+* Set the **URL** to the z/OSMF URL required to start the workflow.  Replace {myzosmfdomain.com} in the snppet below with the domain of the z/OSMF server.
 
   ```
-  https://myzosmfdomain.com/zosmf/workflow/rest/1.0/workflows/${workflowKey}/operations/start
+  https://{myzosmfdomain.com}/zosmf/workflow/rest/1.0/workflows/${workflowKey}/operations/start
   ```
   
     ![start](./media/start.png)
