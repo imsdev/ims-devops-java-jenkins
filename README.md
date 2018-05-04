@@ -14,6 +14,14 @@ For information about authentication and build triggers with Jenkins see the [Wi
   * Build a Java project from GitHub and deploy the build to IMS
   * Set up and start a Java JMP region using z/OSMF
 
+### Repositories used in this demo
+For this setup, we will use two existing repositories: 
+* https://github.com/imsdev/ims-java-jmp.git 
+  * This repository contains two Maven projects which are Java JMP IMS applications. 
+    * In this demo the `insurancenodb` project is deployed to IMS.
+* https://github.com/imsdev/ims-devops-imsjava
+  * This repository contains the z/OSMF workflow used to deploy the Java application to IMS.
+  
 ## The steps below include:
 1. Install Jenkins and Git
 1. Install custom plugins
