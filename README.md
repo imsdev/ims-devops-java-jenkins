@@ -2,9 +2,9 @@
 
 In this demo Jenkins is used with GitHub, Maven, Rest, and [z/OSMF](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.2.0/com.ibm.zos.v2r2.izua300/IZUHPINFO_OverviewMain.htm) to automate the software development process for an IMS application.
 
-What has tradionally been a series of manual hand-offs between development, build, test, staging, and production, can be automated with Jenkins to accelerate the delivery of value to clients.
+What has traditionally been a series of manual hand-offs between development, build, test, staging, and production, can be automated with Jenkins to accelerate the delivery of value to clients.
 
-The following scenario includes a developer commiting code to a Git staging repository. After the code has been committed Jenkins compiles and builds the source and then FTP the jar file to z/OS. Upon completion of this step, Jenkins creates and starts a z/OSMF workflow to enable a Java Messaging Proccessing (JMP) on z/OS.
+The following scenario includes a developer committing code to a Git staging repository. After the code has been committed Jenkins compiles and builds the source and then FTP the jar file to z/OS. Upon completion of this step, Jenkins creates and starts a z/OSMF workflow to enable a Java Messaging Processing (JMP) on z/OS.
 
 For an introduction about DevOps with IMS, see [DevOps and IMS: Getting Started](https://developer.ibm.com/zsystems/2018/02/20/devops-ims-getting-started).
 
@@ -27,7 +27,7 @@ For this setup, we will use two existing repositories:
 1. Install custom plugins
 1. Configure Java and the installed plugins
 1. Create a Maven Project
-1. Configure the Maven project with source on GitHub for automatng the build of the [insurancenodb](https://github.com/imsdev/ims-java-jmp) Java JMP application
+1. Configure the Maven project with source on GitHub for automating the build of the [insurancenodb](https://github.com/imsdev/ims-java-jmp) Java JMP application
 1. Configuring the HTTP request methods for creating and starting the z/OSMF workflow
 
 ## z/OS Prerequisites
@@ -44,7 +44,7 @@ To run the workflow, you need the following authority:
 * RACF UPDATE authority on the high-level qualifiers (HLQs) you are using for the IMS instance libraries.
 * Authority to ADD or DELETE APF authorizations.
 
-## Workstation prerequsites
+## Workstation prerequisites
 * 256 MB of RAM and 1 GB of hard drive space.
 * Latest LTS version of [Jenkins](https://jenkins.io/download).
 * Latest version of [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
@@ -72,7 +72,7 @@ The following procedure installs plugins needed to automate the build and delive
   * In the Jenkins web interface select **Manage Jenkins -> Manage plugins -> Available**.
   * Locate and select the following plugins: (you may want to use the Find tool in the web browser)
     * Maven Integration plugin - Used to build and compile Maven projects.
-    * HTTP Request Plugin - Used to send HTTP JSON requests to z/OS to creata a workflow.
+    * HTTP Request Plugin - Used to send HTTP JSON requests to z/OS to create a workflow.
     * Groovy - A scripting language to process the create workflow response and extract a workflow key needed to start the workflow.
     * Environment Injector Plugin - Used to save the workflow key to an environment variable.
     * Publish Over FTP Plugin - For sending files from Jenkins to the z/OS host server.
@@ -155,7 +155,7 @@ Under Build
   ![build](./media/build.png)
 
 The "Root POM" field points to "{Jenkins Installation Location}/workspace/{Name of Project}". By specifying "insurancenodb/pom.xml" you are pointing to the pom.xml that will be located at 
-`{Jenkins Installation Locaiton}/workspace/insurancenodb/insurancenodb/pom.xml`
+`{Jenkins Installation Location}/workspace/insurancenodb/insurancenodb/pom.xml`
 when the clone of the repository occurs.
 
 When the build occurs later it will create the jar file with the name "insurancenodb-1.jar".
@@ -191,7 +191,7 @@ Under Post Steps:
 
   ![post-build](./media/posts2.png)
 
-z/OSMF Basic Auentication requires your system user ID and password to be encoded to Base 64.
+z/OSMF Basic Authentication requires your system user ID and password to be encoded to Base 64.
 The text you want to encode should be in this format:
 `userid:password`
 
@@ -202,7 +202,7 @@ john:loveims
 ```
 
 You can use the following website to encode/decode: https://www.base64encode.org/.
-For More information on [authorization](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.izua700/IZUHPINFO_RESTServices.htm) visit the Knowlede Center.
+For More information on [authorization](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.izua700/IZUHPINFO_RESTServices.htm) visit the Knowledge Center.
 
 For information about setting up SSL with Jenkins see [Authentication](https://github.com/imsdev/share2018/wiki/Authentication) at the wiki.
 
@@ -245,7 +245,7 @@ workflowKeyFile.text = "workflowKey=" + json.workflowKey
   ![groovy](./media/groovy2.png)
 
 #### Inject environment variables
-This step saves the contents of the workflowKey.txt as enviornment variable which we can call in the next step as part of the HTTP request to start the created z/OSMF workflow. 
+This step saves the contents of the workflowKey.txt as environment variable which we can call in the next step as part of the HTTP request to start the created z/OSMF workflow. 
 
 For example:
 workflowKey=2429c266-e8c3-498d-8a4b-4d306a315d31
