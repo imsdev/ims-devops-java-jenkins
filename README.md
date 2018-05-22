@@ -259,7 +259,7 @@ workflowKey=2429c266-e8c3-498d-8a4b-4d306a315d31
 In this step we are using the $workflowKey environment variable created in the prior step
 
 * Add post-build step -> **HTTP Request and expand Advanced**.
-* Set the **URL** to the z/OSMF URL required to start the workflow.  Replace {myzosmfdomain.com} in the snppet below with the domain of the z/OSMF server.
+* Set the **URL** to the z/OSMF URL required to start the workflow.  Replace {myzosmfdomain.com} in the snippet below with the domain of the z/OSMF server.
 
   ```
   https://{myzosmfdomain.com}/zosmf/workflow/rest/1.0/workflows/${workflowKey}/operations/start
