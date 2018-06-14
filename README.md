@@ -4,11 +4,11 @@ In this demo Jenkins is used with GitHub, Maven, Rest, and [z/OSMF](https://www.
 
 What has traditionally been a series of manual hand-offs between development, build, test, staging, and production, can be automated with Jenkins to accelerate the delivery of value to clients.
 
-The following scenario includes a developer committing code to a Git staging repository. After the code has been committed Jenkins compiles and builds the source and then FTP the jar file to z/OS. Upon completion of this step, Jenkins creates and starts a z/OSMF workflow to enable a Java Messaging Processing (JMP) on z/OS.
+The following scenario includes a developer committing code to a Git staging repository. After the code has been committed Jenkins compiles and builds the source and then FTPs the jar file to z/OS. Upon completion of this step, Jenkins creates and starts a z/OSMF workflow to enable a Java Messaging Processing (JMP) on z/OS.
 
 For an introduction about DevOps with IMS, see [DevOps and IMS: Getting Started](https://developer.ibm.com/zsystems/2018/02/20/devops-ims-getting-started).
 
-For information about authentication and build triggers with Jenkins see the [Wiki](https://github.com/imsdev/share2018/wiki)
+For information about authentication and build triggers with Jenkins see the [Wiki](https://github.com/imsdev/ims-devops-java-jenkins/wiki)
 
 ### This sample demonstrates how to use Jenkins to:
   * Build a Java project from GitHub and deploy the build to IMS
